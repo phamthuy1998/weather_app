@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="address">Address</string>
+    <string name="day_month_year">T.5 13 Th2, 2020</string>
+    <string name="time">14:44</string>
+    <string name="_100">100</string>
+    <string name="o">O</string>
+    <string name="_37">37</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="maximum">Maximum</string>
+    <string name="cloud">Cloud</string>
+</resources>
