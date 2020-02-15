@@ -9,4 +9,13 @@
     <string name="cloudy">Cloudy</string>
     <string name="maximum">Maximum</string>
     <string name="cloud">Cloud</string>
+    <string name="exact_details_now">Exact details now</string>
+    <string name="humidity">Humidity:</string>
+    <string name="probability_of_rain">Probability of rain</string>
+    <string name="amount_of_cloud">Amount of cloud</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="uv_index">UV index</string>
+    <string name="the_temperature_of_the_day">The temperature of the day</string>
+    <string name="the_amount_of_wind_during_the_day">The amount of wind during the day</string>
+    <string name="precipitation_of_the_day">Precipitation of the day</string>
 </resources>

@@ -1,37 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/sky2">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/sky" />
+        <!--        Background for current temperature-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:src="@drawable/sky4"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-
+        <!--        Layout current temperature-->
         <include
             android:id="@+id/layout_temp"
             layout="@layout/layout_temp_today"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <!--        Label detail-->
+        <TextView
+            android:id="@+id/tv_lb_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:text="@string/exact_details_now"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/layout_temp"
             app:layout_constraintTop_toBottomOf="@id/layout_temp" />
 
+        <include
+            android:id="@+id/layout_current_detail"
+            layout="@layout/layout_temp_current_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_lb_detail"
+            app:layout_constraintTop_toBottomOf="@id/tv_lb_detail" />
 
+        <!--        Label tempareture-->
+        <TextView
+            android:id="@+id/tv_lb_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/the_temperature_of_the_day"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/layout_current_detail"
+            app:layout_constraintTop_toBottomOf="@id/layout_current_detail" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_bg_temp"
+            app:layout_constraintBottom_toBottomOf="@id/rv_temp_detail"
+            app:layout_constraintTop_toTopOf="@+id/rv_temp_detail" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_temp_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tv_lb_temp"
+            app:layout_constraintTop_toBottomOf="@id/tv_lb_temp"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_temp_time" />
+
+        <!--        Label wind -->
+        <TextView
+            android:id="@+id/tv_lb_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/the_amount_of_wind_during_the_day"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/rv_temp_detail"
+            app:layout_constraintTop_toBottomOf="@id/rv_temp_detail" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_bg_temp"
+            app:layout_constraintBottom_toBottomOf="@id/rv_wind_detail"
+            app:layout_constraintTop_toTopOf="@+id/rv_wind_detail" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_wind_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tv_lb_wind"
+            app:layout_constraintTop_toBottomOf="@id/tv_lb_wind"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_temp_time" />
+
+        <!--        Label rain -->
+        <TextView
+            android:id="@+id/tv_lb_rain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/precipitation_of_the_day"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/rv_wind_detail"
+            app:layout_constraintTop_toBottomOf="@id/rv_wind_detail" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_bg_temp"
+            app:layout_constraintBottom_toBottomOf="@id/rv_rain_detail"
+            app:layout_constraintTop_toTopOf="@+id/rv_rain_detail" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_rain_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tv_lb_rain"
+            app:layout_constraintTop_toBottomOf="@id/tv_lb_rain"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_temp_time" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</ScrollView>
+</androidx.core.widget.NestedScrollView>
