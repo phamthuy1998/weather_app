@@ -9,7 +9,7 @@
         android:id="@+id/bg_today_temp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         android:background="@drawable/layout_bg_temp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,6 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="b"
         app:layout_constraintStart_toEndOf="@id/tv_temp"
         app:layout_constraintTop_toTopOf="@id/tv_temp" />
 

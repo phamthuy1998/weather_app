@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thời tiết</string>
+    <string name="_100">100</string>
+    <string name="_37">37</string>
+    <string name="_day_after">7 ngày tiếp theo</string>
+    <string name="address">Địa chỉ</string>
+    <string name="amount_of_cloud">Lượng gió</string>
+    <string name="c">°C</string>
+    <string name="cloud">Mây</string>
+    <string name="cloudy">Có mây</string>
+    <string name="contact_us">Liên lạc với chúng tôi</string>
+    <string name="day_month_year">T.5 13 Th2, 2020</string>
+    <string name="exact_details_now">Chi tiết thông tin hiện tại</string>
+    <string name="facebook">Facebook</string>
+    <string name="hide_wallpaper">Ẩn hình nền</string>
+    <string name="home">Trang chủ</string>
+    <string name="humidity">"Dộ ẩm: "</string>
+    <string name="likedin">Likedin</string>
+    <string name="m_s">m/s</string>
+    <string name="maximum">Lớn nhất</string>
+    <string name="o">O</string>
+    <string name="precipitation_of_the_day">Lượng mưa trong ngày</string>
+    <string name="probability_of_rain">Xác suất mưa</string>
+    <string name="setting">Cài đặt</string>
+    <string name="temperature">Nhiệt độ</string>
+    <string name="the_amount_of_wind_during_the_day">Lượng gió trong ngày</string>
+    <string name="the_temperature_of_the_day">Nhiệt độ trong ngày</string>
+    <string name="time">14:44</string>
+    <string name="today">Hôm nay</string>
+    <string name="tomorrow">Ngày mai</string>
+    <string name="uv_index">Chỉ số UV:</string>
+    <string name="wind">Gió</string>
+    <string name="wind_speed">"Tốc độ gió: "</string>
+</resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Weather App</string>
+    <string name="app_name">Weather</string>
     <string name="address">Address</string>
     <string name="day_month_year">T.5 13 Th2, 2020</string>
     <string name="time">14:44</string>
@@ -18,4 +18,21 @@
     <string name="the_temperature_of_the_day">The temperature of the day</string>
     <string name="the_amount_of_wind_during_the_day">The amount of wind during the day</string>
     <string name="precipitation_of_the_day">Precipitation of the day</string>
+    <string name="temperature">Temperature</string>
+    <string name="wind">Wind</string>
+    <string name="hide_wallpaper">Hide wallpaper</string>
+    <string name="home">Home</string>
+    <string name="facebook">Facebook</string>
+    <string name="likedin">Likedin</string>
+    <string name="contact_us">Contact us</string>
+    <string name="setting">Setting</string>
+    <string name="c">°C</string>
+    <string name="m_s">m/s</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="_day_after">7 day after</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_for_a_place">Search for a place</string>
 </resources>

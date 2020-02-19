@@ -8,21 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/sky2">
+        android:layout_height="wrap_content">
 
-        <!--        Background for current temperature-->
-        <!--        <ImageView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:scaleType="fitXY"-->
-        <!--            android:src="@drawable/sky4"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent" />-->
-
-        <!--        Layout current temperature-->
         <include
             android:id="@+id/layout_temp"
             layout="@layout/layout_temp_today"
@@ -37,8 +24,8 @@
             android:id="@+id/tv_lb_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:text="@string/exact_details_now"
             android:textColor="@android:color/white"
             android:textSize="18sp"
@@ -51,8 +38,8 @@
             layout="@layout/layout_temp_current_detail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/tv_lb_detail"
             app:layout_constraintTop_toBottomOf="@id/tv_lb_detail" />
@@ -62,7 +49,7 @@
             android:id="@+id/tv_lb_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:text="@string/the_temperature_of_the_day"
             android:textColor="@android:color/white"
             android:textSize="18sp"
@@ -73,8 +60,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/layout_bg_temp"
             app:layout_constraintBottom_toBottomOf="@id/rv_temp_detail"
             app:layout_constraintTop_toTopOf="@+id/rv_temp_detail" />
@@ -83,8 +70,8 @@
             android:id="@+id/rv_temp_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="@id/tv_lb_temp"
             app:layout_constraintTop_toBottomOf="@id/tv_lb_temp"
@@ -96,7 +83,7 @@
             android:id="@+id/tv_lb_wind"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:text="@string/the_amount_of_wind_during_the_day"
             android:textColor="@android:color/white"
             android:textSize="18sp"
@@ -107,8 +94,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/layout_bg_temp"
             app:layout_constraintBottom_toBottomOf="@id/rv_wind_detail"
             app:layout_constraintTop_toTopOf="@+id/rv_wind_detail" />
@@ -117,8 +104,8 @@
             android:id="@+id/rv_wind_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="@id/tv_lb_wind"
             app:layout_constraintTop_toBottomOf="@id/tv_lb_wind"
@@ -130,7 +117,7 @@
             android:id="@+id/tv_lb_rain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:text="@string/precipitation_of_the_day"
             android:textColor="@android:color/white"
             android:textSize="18sp"
@@ -141,8 +128,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/layout_bg_temp"
             app:layout_constraintBottom_toBottomOf="@id/rv_rain_detail"
             app:layout_constraintTop_toTopOf="@+id/rv_rain_detail" />
@@ -151,8 +138,8 @@
             android:id="@+id/rv_rain_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="@id/tv_lb_rain"
             app:layout_constraintTop_toBottomOf="@id/tv_lb_rain"
